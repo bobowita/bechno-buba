@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>techno buba</title>
+
+</head>
+
+<body>
+    <ul class="uu">
+        <li class="ii"><a class="active" href="index_jajo.html">TECHNO BUBA</a></li>
+        <li class="ii"><a href="news.html">News</a></li>
+        <li class="ii"><a href="contact.html">Contact</a></li>
+        <li class="ii"><a href="about.html">About</a></li>
+        <li class="sd"><a href="form.html">sing in / up</a></li>
+    </ul>
+
+    <div class="for">
+    <form action="login.php" method="post" class="formm">
+
+        <h2>LOGIN</h2>
+
+        <?php if (isset($_GET['error'])) { ?>
+
+            <p class="error"><?php echo $_GET['error']; ?></p>
+
+        <?php } ?>
+        
+
+        <label>User Name</label>
+
+        <input type="text" name="uname" placeholder="User Name"><br><br>
+
+        <label>Password</label>
+
+        <input type="password" name="password" placeholder="Password"><br> <br>
+
+        <button type="submit">Login</button>
+
+     </form>
+    </div>
+
+
+
+    <footer>
+        <h1 style="margin-top: 20px; margin-bottom: 10px;">TECHNO BUBA</h1>
+    
+            <div class="fot">
+            Okręt nasz wpłynął w mgłę i fregaty dwie
+            Popłynęły naszym kursem by nie zgubić się.
+            Potem szkwał wypchnął nas poza mleczny pas
+            I nikt wtedy nie przypuszczał, że fregaty śmierć nam niosą.
+            </div>
+    
+            <div class="icc">
+                <li class="ff"><img src="drill.png" class="imug"></li>
+                <li class="ff"><img src="drill.png" class="imug"></li>
+                <li class="ff"><img src="drill.png" class="imug"></li>
+                <li class="ff"><img src="drill.png" class="imug"></li>
+                <li class="ff"><img src="drill.png" class="imug"></li>
+            </div>
+    
+        <div class="foot">
+            made by me
+        </div>    
+    </footer>
+    
+</body>
+</html>
